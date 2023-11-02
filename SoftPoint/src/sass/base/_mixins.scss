@@ -1,0 +1,28 @@
+@mixin before_dot{
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 19%;
+    bottom: 22px;
+    width: 6.8px;
+    height: 6.8px;
+    border-radius: 100%;
+    background: $main-color;
+    opacity: .5;
+  }
+}
+@mixin before_mini-dot{
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 17%;
+    bottom: 23px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background: $main-color;
+    opacity: .3;
+  }
+}

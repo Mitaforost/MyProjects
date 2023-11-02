@@ -1,0 +1,22 @@
+.btn{
+  margin: 0;
+  padding: 15px 30px;
+  border-radius: 6px;
+  background: #F44545;
+  border: none;
+  opacity: 1;
+  cursor: pointer;
+  &:hover{
+    background: #F90545;
+    transition: all .3s;
+  }
+  &-transparent{
+    padding: 15px 25px;
+    background: transparent;
+    &:hover{
+      background: transparent;
+      color: $main-color;
+      transition: all .3s;
+    }
+  }
+}

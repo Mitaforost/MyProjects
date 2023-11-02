@@ -1,27 +1,27 @@
 @font-face {
-  font-family: Roboto;
+  font-family: Poppins;
   font-display: swap;
   font-weight: 400;
   font-style: normal;
-  src: local("Roboto-Regular"),
-  url("../../fonts/Roboto-Regular.woff") format('woff');,
-  url("../../fonts/Roboto-Regular.woff2") format('woff2');;
+  src: local("Poppins-Regular"),
+  url("../../fonts/Poppins-Regular.woff") format('woff'),
+  url("../../fonts/Poppins-Regular.woff2") format('woff2');
 }
 @font-face {
-  font-family: Roboto;
+  font-family: Poppins;
   font-display: swap;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
-  src: local("Roboto-light"),
-  url("../../fonts/Roboto-light.woff") format('woff');,
-  url("../../fonts/Roboto-light.woff2") format('woff2');;
+  src: local("Poppins-Medium"),
+  url("../../fonts/Poppins-Medium.woff") format('woff'),
+  url("../../fonts/Poppins-Medium.woff2") format('woff2');
 }
 @font-face {
-  font-family: Roboto;
+  font-family: Poppins;
   font-display: swap;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
-  src: local("Roboto-Bold"),
-  url("../../fonts/Roboto-Bold.woff") format('woff');,
-  url("../../fonts/Roboto-Bold.woff2") format('woff2');;
+  src: local("Poppins-SemiBold"),
+  url("../../fonts/Poppins-SemiBold.woff") format('woff'),
+  url("../../fonts/Poppins-SemiBold.woff2") format('woff2');
 }

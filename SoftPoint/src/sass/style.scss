@@ -1,10 +1,12 @@
-
+@import "base/mixins";
+@import "base/variables";
+@import "libs/fonts";
 
 *,
 input,
 *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -18,5 +20,20 @@ body{
 .container{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
 }
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
+
+@import "blocks/title";
+@import "blocks/button";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/clients";
+@import "blocks/software";
