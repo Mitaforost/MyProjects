@@ -59,4 +59,16 @@
       font-weight: 600;
     }
   }
+  &__feature{
+    padding-top: 30px;
+    display: flex;
+  }
+  &__learn{
+    background: #282323;
+    color: #FFFFFF;
+    &:hover{
+      transition: all .3s;
+      background: $main-color;
+    }
+  }
 }
