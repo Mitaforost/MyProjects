@@ -1,74 +1,107 @@
-.software{
-  padding-top: 110px;
+.software {
+  margin-top: 110px;
   position: relative;
-  left: -70px;
-  &__block{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 75px;
-
+  &:last-child{
+    margin-top: 260px;
   }
-  &__wrapper{
+  &__block {
+    display: grid;
+    grid-template-columns: minmax(524px, auto) minmax(524px, auto);
+    column-gap: 75px;
+  }
+  &-block__left{
+    position: relative;
+    left: -70px;
+  }
+  &__wrapper {
     display: grid;
     grid-template: minmax(290px, auto) / repeat(2, minmax(282px, auto));
     grid-auto-rows: minmax(290px, auto);
     gap: 30px;
   }
-  &__card{
+  &__card {
     padding: 35px 24px 35px 35px;
     border-radius: 10px;
     border: 1px solid rgba(2, 18, 6, 0.10);
-    &:first-child{
+    &:hover {
       box-shadow: 0 15px 65px 0 rgba(65, 77, 68, 0.15);
       border: none;
     }
   }
-  &__box{
+  &__box {
     width: 75px;
     height: 75px;
+    img{
+      border-radius: 10px;
+    }
   }
-  &__icon{
-    border-radius: 10px;
-  }
-  img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  &__caption{
+  &__caption {
     padding-top: 25px;
+    font-weight: 600;
   }
-  &__text{
+  &__text {
     padding-top: 10px;
   }
-  &__info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  &__info {
+    max-width: 480px;
+    margin: auto 0;
   }
-  &__subtitle{
+  &-info-shift{
+    padding: 91px 0;
+  }
+  &__title{
+    color: #021206;
+  }
+  &__subtitle {
     padding-top: 20px;
-    opacity: 0.7;
-    max-width: 480px;
   }
-  &__desc{
+  &__desc {
     padding-top: 15px;
-    opacity: 0.7;
-    max-width: 480px;
-    span{
+    span {
       font-weight: 600;
     }
   }
-  &__feature{
+  &__items {
+    padding-top: 20px;
+  }
+  &__item {
+    position: relative;
+    margin-top: 16px;
+    padding-left: 30px;
+    @include before-marker;
+    &:first-child {
+      margin: 0;
+    }
+  }
+  &__control {
     padding-top: 30px;
     display: flex;
   }
-  &__learn{
+  &__learn {
     background: #282323;
     color: #FFFFFF;
-    &:hover{
-      transition: all .3s;
-      background: $main-color;
+  }
+  &__download{
+    color: #FFFFFF;
+    font-weight: 500;
+  }
+  &__question {
+    color: #FF4D4D;
+    font-weight: 500;
+  }
+  &__pictures {
+    max-height: max-content;
+    max-width: max-content;
+    &_dashboard {
+      filter: drop-shadow(14px 40px 116px rgba(0, 0, 0, 0.15));
+    }
+    &_laptop{
+      position: absolute;
+      bottom: 0;
+      z-index: 3;
     }
   }
+}
+.software-color{
+  background-color: rgba(142, 230, 201, .1);
 }

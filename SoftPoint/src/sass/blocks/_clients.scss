@@ -1,6 +1,7 @@
 .clients{
+  margin-top: 110px;
   background: rgba(142, 230, 201, .1);
-  &__block{
+  &__wrapper{
     padding: 55px 0;
     display: grid;
     grid-template: minmax(40px, auto) / repeat(5, minmax(126px, auto));

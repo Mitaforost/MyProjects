@@ -26,3 +26,39 @@
     opacity: .3;
   }
 }
+//@mixin orange-circle($width,$height,$top,$right,$bottom,$left) {
+//  position: absolute;
+//  width: $width;
+//  height: $height;
+//  top: $top;
+//  right: $right;
+//  bottom: $bottom;
+//  left: $left;
+//  z-index: -1;
+//  background-image: url("../../img/orange_circle.png");
+//}
+//@mixin blue-circle($width,$height,$top,$right,$bottom,$left) {
+//  position: absolute;
+//  width: $width;
+//  height: $height;
+//  top: $top;
+//  right: $right;
+//  bottom: $bottom;
+//  left: $left;
+//  z-index: -1;
+//  background-image: url("../../img/mc_circle.png");
+//}
+@mixin before-marker() {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url("../../icons/marker.svg");
+    opacity: 1;
+  }
+}

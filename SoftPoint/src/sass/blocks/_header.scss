@@ -1,10 +1,9 @@
 .header{
   padding-top: 35px;
-  &__block{
+  &__wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
   &__logo{
     height: 30px;
@@ -15,22 +14,27 @@
       object-fit: cover;
     }
   }
-  &__nav{
-    width: 312px;
-    &-list{
+  .header-nav{
+    &__list{
       display: flex;
-      justify-content: space-between;
     }
-    a{
-      opacity: 0.5;
+    &__item{
+      padding-right: 45px;
+      &:last-child{
+        padding: 0;
+      }
+    }
+    &__link{
+      font-size: 18px;
+      line-height: 160%;
+      font-weight: 400;
       &:hover{
-        opacity: 1;
-        color: #24dc9f;
-        transition: all .6s;
+        color: $main-color;
+        transition: all .3s;
       }
     }
   }
-  &__authorization{
+  &__control{
     display: flex;
     align-items: center;
   }

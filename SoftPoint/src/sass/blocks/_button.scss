@@ -1,22 +1,32 @@
-.btn{
+.btn-primary{
   margin: 0;
   padding: 15px 30px;
   border-radius: 6px;
   background: #F44545;
   border: none;
-  opacity: 1;
   cursor: pointer;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 500;
   &:hover{
-    background: #F90545;
+    background: $main-color;
     transition: all .3s;
   }
-  &-transparent{
-    padding: 15px 25px;
+}
+.btn-secondary{
+  margin: 0;
+  padding: 15px 25px;
+  background: transparent;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: 500;
+  &:hover{
     background: transparent;
-    &:hover{
-      background: transparent;
-      color: $main-color;
-      transition: all .3s;
-    }
+    color: $main-color;
+    transition: all .3s;
   }
 }
