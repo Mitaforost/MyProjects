@@ -66,9 +66,11 @@ img {
   border: none;
   transition: all 0.3s; }
 
-@import "blocks/title";
 @import "blocks/button";
 @import "blocks/header";
 @import "blocks/banner";
 @import "blocks/clients";
 @import "blocks/software";
+@import "blocks/price";
+@import "blocks/footer";
+@import "blocks/media";

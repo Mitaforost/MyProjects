@@ -1,0 +1,31 @@
+.footer{
+  margin-top: 120px;
+  background-color: rgba(142, 230, 201, .1);
+  &__content{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    p.p4{
+      margin-top: 20px;
+    }
+    p.p1{
+      font-weight: 500;
+    }
+  }
+  &__list{
+    margin-top: 20px;
+  }
+  &__item{
+    margin-bottom: 10px;
+  }
+  &__link{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
