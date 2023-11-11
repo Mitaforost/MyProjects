@@ -68,6 +68,15 @@ img {
   object-fit: cover;
   border: none;
   transition: all 0.3s; }
+.fade{
+  background: rgba(0,0,0,.6);
+  display: none;
+  position: fixed;
+  z-index: 5;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+}
 
 @import "blocks/button";
 @import "blocks/header";

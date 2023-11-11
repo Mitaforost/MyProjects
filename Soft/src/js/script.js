@@ -47,6 +47,23 @@ window.addEventListener("load", function () {
         e.style.setProperty('--max', e.max == '' ? '100' : e.max);
         e.addEventListener('input', () => e.style.setProperty('--value', e.value));
     }
+
+    let burger = document.querySelector('.header__menu'),
+        mobile = document.querySelector('.header__mobile'),
+        mobilBtn = document.querySelector('.header-mobile__close'),
+        fade = document.querySelector('.fade');
+    burger.addEventListener('click',function (){
+        mobile.classList.add('header-mobile__active');
+        // mobile.style.display = 'block';
+        mobile.style.transform = 'translateX(0)';
+        fade.style.display = 'block';
+    })
+    mobilBtn.addEventListener('click', function (){
+        mobile.classList.remove('header-mobile__active');
+        mobile.style.transform = 'translateX(-315px)';
+        // mobile.style.display = 'none';
+        fade.style.display = 'none';
+    })
 });
 
 
