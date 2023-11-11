@@ -72,11 +72,8 @@
       width: 410px;
     }
     &__title{
-      position: relative;
-      color: #021206;
       @include before_dot(14%,18px);
       span{
-        color: $main-color;
         @include before_mini-dot(11%,19px);
       }
     }
@@ -207,11 +204,9 @@
   .h2, h2 {
     font-size: 32px; }
   .btn-primary{
-    padding: 10px 20px;
     font-size: 16px;
   }
   .btn-secondary{
-    padding: 10px 18px;
     font-size: 16px;
   }
   .container {
@@ -228,14 +223,16 @@
     &__menu{
       display: block;
     }
+    .header-mobile{
+      &__control{
+        display: none;
+      }
+    }
   }
   .banner{
     &__title{
-      position: relative;
-      color: #021206;
       @include before_dot(28%,15px);
       span{
-        color: $main-color;
         @include before_mini-dot(25%,16px);
       }
     }
@@ -245,9 +242,93 @@
       grid-template-columns: repeat(2,minmax(130px, 1fr));
     }
   }
+  .software{
+    &__wrapper{
+      grid-template-columns: 282px;
+    }
+    &__pictures{
+      width: 100%;
+    }
+  }
+
 }
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   .container {
-    max-width: 320px;
+    width: 355px;
+  }
+  .header{
+    &__control{
+      display: none;
+    }
+    .header-mobile{
+      &__control{
+        display: flex;
+      }
+    }
+  }
+  .banner{
+    &__info{
+      width: 100%;
+    }
+    &__title{
+      @include before_dot(13%,15px);
+      span{
+        @include before_mini-dot(10%,16px);
+      }
+    }
+    &__picture{
+      display: none;
+    }
+  }
+  .clients{
+    position: relative;
+    &__wrapper{
+      display: flex;
+      overflow: auto;
+      gap: 30px;
+    }
+  }
+  .price{
+    &__cards{
+      margin-top: 40px;
+    }
+    &__switch{
+      display: none;
+    }
+    &__salary{
+      display: none;
+    }
+    &__slider{
+      display: none;
+    }
   }
 }
+//@media (max-width: 320px) {
+//  .container {
+//    width: 100%;
+//  }
+//  .header{
+//    &__control{
+//      display: none;
+//    }
+//    .header-mobile{
+//      &__control{
+//        display: block;
+//      }
+//    }
+//  }
+//  .banner{
+//    &__info{
+//      width: 100%;
+//    }
+//    &__title{
+//      @include before_dot(21%,15px);
+//      span{
+//        @include before_mini-dot(18%,16px);
+//      }
+//    }
+//    &__picture{
+//      display: none;
+//    }
+//  }
+//}
