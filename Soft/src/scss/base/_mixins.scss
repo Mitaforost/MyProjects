@@ -1,10 +1,10 @@
-@mixin before_dot{
+@mixin before_dot ($right,$bottom){
   &:before{
     content: '';
     position: absolute;
     z-index: 1;
-    right: 19%;
-    bottom: 22px;
+    right: $right;
+    bottom: $bottom;
     width: 6.8px;
     height: 6.8px;
     border-radius: 100%;
@@ -12,13 +12,13 @@
     opacity: .5;
   }
 }
-@mixin before_mini-dot{
+@mixin before_mini-dot($right,$bottom){
   &:before{
     content: '';
     position: absolute;
     z-index: 1;
-    right: 17%;
-    bottom: 23px;
+    right: $right;
+    bottom: $bottom;
     width: 5px;
     height: 5px;
     border-radius: 100%;
@@ -26,28 +26,6 @@
     opacity: .3;
   }
 }
-//@mixin orange-circle($width,$height,$top,$right,$bottom,$left) {
-//  position: absolute;
-//  width: $width;
-//  height: $height;
-//  top: $top;
-//  right: $right;
-//  bottom: $bottom;
-//  left: $left;
-//  z-index: -1;
-//  background-image: url("../../img/orange_circle.png");
-//}
-//@mixin blue-circle($width,$height,$top,$right,$bottom,$left) {
-//  position: absolute;
-//  width: $width;
-//  height: $height;
-//  top: $top;
-//  right: $right;
-//  bottom: $bottom;
-//  left: $left;
-//  z-index: -1;
-//  background-image: url("../../img/mc_circle.png");
-//}
 @mixin before-marker() {
   position: relative;
   &::before {

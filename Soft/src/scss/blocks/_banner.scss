@@ -1,15 +1,8 @@
 .banner{
   margin-top: 110px;
   position: relative;
-  &__block{
-    display: grid;
-    grid-template-columns: minmax(310px, 510px) auto;
-    height: auto;
-    column-gap: 68px;
-    position: relative;
-    margin: auto 0;
-  }
   &__info{
+    max-width: 510px;
     position: relative;
     align-items: center;
     margin: auto 0;
@@ -17,10 +10,10 @@
   &__title{
     position: relative;
     color: #021206;
-    @include before_dot;
+    @include before_dot(19%,22px);
     span{
       color: $main-color;
-      @include before_mini-dot;
+      @include before_mini-dot(17%,23px);
     }
   }
   &__subtitle{
@@ -30,28 +23,30 @@
       font-weight: 500;
     }
   }
-  .banner-form{
+  &__form{
     padding-top: 30px;
     width: 470px;
-    &__block{
-      position: relative;
-    }
-    &__input{
-      width: 100%;
-      height: 65px;
-      padding: 19px 145px 19px 25px;
-      border: none;
-      border-radius: 6px;
-      font-size: 18px;
-      line-height: 160%;
-      filter: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 0.15));
-    }
-    &__btn{
-      position: absolute;
-      right: 6px;
-      top: 6px;
-      padding: 10px 33px;
-      color: #FFF;
+    .banner-form{
+      &__block{
+        position: relative;
+      }
+      &__input{
+        width: 100%;
+        height: 65px;
+        padding: 19px 145px 19px 25px;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        line-height: 160%;
+        filter: drop-shadow(-5px 5px 45px rgba(2, 18, 6, 0.15));
+      }
+      &__btn{
+        position: absolute;
+        right: 6px;
+        top: 6px;
+        padding: 10px 33px;
+        color: #FFF;
+      }
     }
   }
   &__store{
@@ -67,14 +62,9 @@
       padding: 0;
     }
   }
-  &__pictures{
-    position: relative;
-    margin: auto 0;
-    &_laptop{
-      position: absolute;
-      z-index: 3;
-      flex-shrink: 1;
-      filter: drop-shadow(-8px 10px 65px rgba(2, 18, 6, 0.20));
-    }
+  &__picture{
+    position: absolute;
+    top: -20px;
+    right: -140px;
   }
 }

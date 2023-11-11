@@ -9,7 +9,7 @@
     grid-template-columns: minmax(524px, auto) minmax(524px, auto);
     column-gap: 75px;
   }
-  &-block__left{
+  &__block-left{
     position: relative;
     left: -70px;
   }
@@ -89,17 +89,16 @@
     color: #FF4D4D;
     font-weight: 500;
   }
-  &__pictures {
-    max-height: max-content;
-    max-width: max-content;
-    &_dashboard {
-      filter: drop-shadow(14px 40px 116px rgba(0, 0, 0, 0.15));
-    }
-    &_laptop{
-      bottom: 0;
-      z-index: 3;
-      flex-shrink: 1;
-    }
+  //&__pictures {
+  //  object-fit: cover;
+  //  &_dashboard {
+  //    filter: drop-shadow(14px 40px 116px rgba(0, 0, 0, 0.15));
+  //  }
+  //}
+  &__laptop{
+    position: absolute;
+    bottom: 0;
+    right: -140px;
   }
 }
 .software-color{
