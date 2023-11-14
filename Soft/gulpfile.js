@@ -1,18 +1,20 @@
-import gulp from 'gulp';
-import dartSass from 'sass';
-import gulpSass from 'gulp-sass';
-import ttf2woff from 'gulp-ttf2woff';
-import ttf2woff2 from 'gulp-ttf2woff2';
-const sass = gulpSass(dartSass);
-import autoprefixer from 'gulp-autoprefixer';
-import cleanCSS from 'gulp-clean-css';
-import concat from 'gulp-concat';
-import uglify from 'gulp-uglify';
-import imagemin from 'gulp-imagemin';
-import { deleteAsync } from 'del';
-import browserSync from 'browser-sync';
-import newer from 'gulp-newer';
-import plumber from 'gulp-plumber';
+import gulp from 'gulp'; // Модуль для автоматизации задач в рабочем процессе
+import dartSass from 'sass'; // Реализация Dart Sass
+import gulpSass from 'gulp-sass'; // Gulp плагин для компиляции Sass
+import ttf2woff from 'gulp-ttf2woff'; // Gulp плагин для конвертации TTF-шрифтов в WOFF
+import ttf2woff2 from 'gulp-ttf2woff2'; // Gulp плагин для конвертации TTF-шрифтов в WOFF2
+const sass = gulpSass(dartSass); // Создание экземпляра Gulp-Sass с использованием Dart Sass
+import autoprefixer from 'gulp-autoprefixer'; // Gulp плагин для автоматической установки префиксов
+import cleanCSS from 'gulp-clean-css'; // Gulp плагин для минификации CSS
+import concat from 'gulp-concat'; // Gulp плагин для объединения файлов
+import uglify from 'gulp-uglify'; // Gulp плагин для минификации JavaScript
+import imagemin from 'gulp-imagemin'; // Gulp плагин для оптимизации изображений
+import { deleteAsync } from 'del'; // Модуль для удаления файлов и директорий
+import browserSync from 'browser-sync'; // Модуль для создания локального сервера
+import newer from 'gulp-newer'; // Gulp плагин для фильтрации новых или измененных файлов
+import plumber from 'gulp-plumber'; // Gulp плагин для обработки ошибок при сборке проекта
+
+// Create a reference to the deleteAsync function from the del module
 
 const bs = browserSync.create();
 
