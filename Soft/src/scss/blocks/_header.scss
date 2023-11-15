@@ -42,7 +42,7 @@
   &__register{
     color: #FFF;
   }
-  &__menu{
+  &__btn{
     width: 35px;
     height: 35px;
     display: none;
@@ -51,7 +51,7 @@
     border: none;
     cursor: pointer;
   }
-  .header-menu{
+  .header-btn{
     &__line{
       display: block;
       width: 20px;
@@ -79,7 +79,7 @@
     padding: 0 20px;
   }
   .header-mobile{
-    &__close{
+    &__close-btn{
       position: absolute;
       display: flex;
       top: 30px;
