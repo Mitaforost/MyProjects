@@ -13,6 +13,7 @@ import { deleteAsync } from 'del';
 import browserSync from 'browser-sync';
 import newer from 'gulp-newer';
 import plumber from 'gulp-plumber';
+import fileInclude from 'gulp-file-include';
 
 const bs = browserSync.create();
 
@@ -53,10 +54,14 @@ gulp.task('images', () =>
 );
 
 gulp.task('html', () =>
-    gulp.src(paths.html)
-        .pipe(newer(paths.dist))
+    gulp.src('src/index.html')
+        .pipe(plumber())
+        .pipe(fileInclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(gulp.dest(paths.dist))
-        .pipe(bs.stream())
+        .pipe(bs.stream({ once: true }))
 );
 
 gulp.task('fonts', () =>
@@ -69,9 +74,16 @@ gulp.task('fonts', () =>
         .pipe(gulp.dest(`${paths.dist}/fonts`))
 );
 
+gulp.task('copyHtml', () =>
+    gulp.src('src/index.html')
+        .pipe(newer(paths.dist))
+        .pipe(gulp.dest(paths.dist))
+        .pipe(bs.stream())
+);
+
 gulp.task('cleanDist', () => deleteAsync(paths.dist));
 
-gulp.task('default', gulp.series('cleanDist', 'styles', 'scripts', 'images', 'html', 'fonts', () => {
+gulp.task('default', gulp.series('cleanDist', 'styles', 'scripts', 'images', 'html', 'fonts', 'copyHtml', () => {
     bs.init({
         server: {
             baseDir: paths.dist,
