@@ -56,7 +56,7 @@ gulp.task('images', () =>
 gulp.task('html', () =>
     gulp.src(paths.html)
         .pipe(plumber())
-        .pipe(fileInclude({  // добавлен вызов плагина для вставки содержимого
+        .pipe(fileInclude({
             prefix: '@@',
             basepath: '@file',
         }))

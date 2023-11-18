@@ -6,7 +6,7 @@
 input,
 *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -16,8 +16,9 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 ul {
@@ -27,14 +28,12 @@ ul {
 }
 
 .h1, h1 {
-  font-size: 54px;
-  font-weight: 600;
+  font-size: 50px;
   line-height: normal;
 }
 
 .h2, h2 {
-  font-size: 45px;
-  font-weight: 600;
+  font-size: 32px;
   line-height: normal;
 }
 
@@ -58,6 +57,7 @@ p {
 .p4 {
   font-size: 16px;
 }
-
+@import "blocks/button";
+@import "blocks/header";
 
 @import "blocks/media";

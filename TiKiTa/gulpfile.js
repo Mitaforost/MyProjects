@@ -34,9 +34,11 @@ gulp.task('styles', () =>
         .pipe(autoprefixer())
         .pipe(cleanCSS())
         .pipe(concat('style.min.css'))
-        .pipe(gulp.dest(`${paths.dist}/css`))
+        .pipe(gulp.dest(`${paths.dist}/css`)) // Save the minified file with .min.css extension
+        .pipe(gulp.dest(`${paths.dist}/css`)) // Copy the original file to the destination
         .pipe(bs.stream())
 );
+
 
 gulp.task('scripts', () =>
     gulp.src(paths.scripts)
