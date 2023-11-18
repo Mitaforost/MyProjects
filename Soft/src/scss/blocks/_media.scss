@@ -44,7 +44,6 @@
 @media (max-width: 1240px) {
   .container {
     max-width: 1180px;
-    padding: 0 10px;
   }
   .software{
     &__block{
@@ -72,9 +71,9 @@
       width: 410px;
     }
     &__title{
-      @include before_dot(14%,18px);
+      @include before_dot(14%,18px,block);
       span{
-        @include before_mini-dot(11%,19px);
+        @include before_mini-dot(11%,19px,block);
       }
     }
     &__form{
@@ -223,6 +222,9 @@
     &__menu{
       display: block;
     }
+    &__btn{
+      display: block;
+    }
     .header-mobile{
       &__control{
         display: none;
@@ -231,15 +233,18 @@
   }
   .banner{
     &__title{
-      @include before_dot(28%,15px);
+      @include before_dot(28%,15px,block);
       span{
-        @include before_mini-dot(25%,16px);
+        @include before_mini-dot(25%,16px,block);
       }
     }
   }
   .clients{
+    position: relative;
     &__wrapper{
-      grid-template-columns: repeat(2,minmax(130px, 1fr));
+      display: flex;
+      overflow: auto;
+      gap: 30px;
     }
   }
   .software{
@@ -254,7 +259,7 @@
 }
 @media (max-width: 576px) {
   .container {
-    width: 355px;
+    width: 100%;
   }
   .header{
     &__control{
@@ -271,21 +276,26 @@
       width: 100%;
     }
     &__title{
-      @include before_dot(13%,15px);
+      @include before_dot(13%,15px,none);
       span{
-        @include before_mini-dot(10%,16px);
+        @include before_mini-dot(10%,16px,none);
       }
     }
     &__picture{
       display: none;
     }
+    //&__form{
+    //  width: 100%;
+    //  .banner-form{
+    //    &__input{
+    //      padding: 10px 30px 10px 10px;
+    //    }
+    //  }
+    //}
   }
-  .clients{
-    position: relative;
-    &__wrapper{
-      display: flex;
-      overflow: auto;
-      gap: 30px;
+  .software{
+    &__info{
+      max-width: 400px;
     }
   }
   .price{

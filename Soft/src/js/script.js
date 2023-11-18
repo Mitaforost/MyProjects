@@ -85,9 +85,9 @@ window.addEventListener("load", function () {
         e.addEventListener('input', () => e.style.setProperty('--value', e.value));
     }
 
-    let burger = document.querySelector('.header__menu'),
+    let burger = document.querySelector('.header__btn'),
         mobile = document.querySelector('.header__mobile'),
-        mobilBtn = document.querySelector('.header-mobile__close'),
+        mobilBtn = document.querySelector('.header-mobile__close-btn'),
         fade = document.querySelector('.fade');
     burger.addEventListener('click', function () {
         mobile.classList.add('header-mobile__active');

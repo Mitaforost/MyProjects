@@ -1,4 +1,4 @@
-@mixin before_dot ($right,$bottom){
+@mixin before_dot ($right,$bottom,$display){
   &:before{
     content: '';
     position: absolute;
@@ -10,9 +10,10 @@
     border-radius: 100%;
     background: $main-color;
     opacity: .5;
+    display: $display;
   }
 }
-@mixin before_mini-dot($right,$bottom){
+@mixin before_mini-dot($right,$bottom,$display){
   &:before{
     content: '';
     position: absolute;
@@ -24,6 +25,7 @@
     border-radius: 100%;
     background: $main-color;
     opacity: .3;
+    display: $display;
   }
 }
 @mixin before-marker() {

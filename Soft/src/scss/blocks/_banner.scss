@@ -10,10 +10,10 @@
   &__title{
     position: relative;
     color: #021206;
-    @include before_dot(19%,22px);
+    @include before_dot(19%,22px,block);
     span{
       color: $main-color;
-      @include before_mini-dot(17%,23px);
+      @include before_mini-dot(17%,23px,block);
     }
   }
   &__subtitle{
