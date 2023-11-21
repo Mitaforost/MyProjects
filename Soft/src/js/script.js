@@ -91,14 +91,19 @@ window.addEventListener("load", function () {
         fade = document.querySelector('.fade');
     burger.addEventListener('click', function () {
         mobile.classList.add('header-mobile__active');
-        // mobile.style.display = 'block';
         mobile.style.transform = 'translateX(0)';
+        mobile.style.display = 'block';
         fade.style.display = 'block';
     })
     mobilBtn.addEventListener('click', function () {
         mobile.classList.remove('header-mobile__active');
-        mobile.style.transform = 'translateX(-315px)';
+        mobile.style.transform = 'translateX(-120%)';
         // mobile.style.display = 'none';
+        fade.style.display = 'none';
+    })
+    fade.addEventListener('click', function () {
+        mobile.classList.remove('header-mobile__active');
+        mobile.style.transform = 'translateX(-315px)';
         fade.style.display = 'none';
     })
 });

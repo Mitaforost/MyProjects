@@ -6,9 +6,12 @@
     }
   }
   .software{
+    .software-info-shift{
+      margin: 60px 0;
+    }
     &__laptop{
-      height: 600px;
-      right: 60px;
+      height: 500px;
+      right: 0;
     }
   }
 }
@@ -16,6 +19,12 @@
   .software{
     &__block-left{
       left: 0;
+    }
+    .software-info-shift{
+      margin: 40px 0;
+    }
+    &__laptop{
+      right: 0;
     }
   }
 }
@@ -28,8 +37,7 @@
   }
   .software{
     &__laptop{
-      height: 550px;
-      right: 40px;
+      height: 450px;
     }
   }
   .price{
@@ -49,6 +57,10 @@
     &__block{
       column-gap: 40px;
     }
+    &__laptop{
+      height: 460px;
+      left: 50%;
+    }
   }
 }
 @media (max-width: 1200px) {
@@ -60,8 +72,11 @@
   .container {
     max-width: 960px;
   }
+  .header{
+    margin-bottom: 80px;
+  }
   .banner{
-    margin-top: 80px;
+    margin-bottom: 80px;
     &__block{
       display: flex;
       flex-direction: column;
@@ -70,14 +85,7 @@
     &__info{
       width: 410px;
     }
-    &__title{
-      @include before_dot(14%,18px,block);
-      span{
-        @include before_mini-dot(11%,19px,block);
-      }
-    }
     &__form{
-      padding-top: 30px;
       width: 100%;
     }
     &__picture{
@@ -87,56 +95,47 @@
     }
   }
   .clients{
-    margin-top: 80px;
+    margin-bottom: 80px;
   }
   .software{
-    margin-top: 80px;
+    margin-bottom: 80px;
     &__block{
       display: flex;
-      flex-direction: column;
-      align-items: center;
     }
-    &__wrapper{
-      margin-top: 40px;
-      order: 2;
-      grid-template-columns: repeat(2, 282px);
+    &__card {
+      width: 235px;
+      padding: 15px 15px 20px 15px;
     }
     &__info{
-      order: 1;
-      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     &__control {
-      margin: 0 auto;
-      padding-top: 30px;
       display: flex;
     }
     &__pictures{
-      margin-top: 40px;
-      order: 2;
-      height: 100%;
+      margin: auto 0;
+      img{
+        width: 450px;
+        height: auto;
+      }
+    }
+    .software-info-shift{
+      margin: 20px 0;
     }
     &__laptop{
-      display: none;
+      height: 380px;
+      left: auto;
+      right: 0;
     }
   }
   .price{
-    margin-top: 80px;
+    margin-bottom: 80px;
     &__cards{
       flex-wrap: wrap;
       justify-content: space-around;
       row-gap: 40px;
-    }
-  }
-  .footer{
-    margin-top: 80px;
-    &__content{
-
-    }
-    &__info{
-      width: 220px;
     }
   }
 }
@@ -146,12 +145,16 @@
   }
   .banner{
     &__info{
-      margin: 0 auto;
+      width: 100%;
+    }
+    &__store{
+      margin-bottom: 40px;
     }
     &__picture{
-      top: 0;
-      margin: 40px auto 0 auto;
       position: relative;
+      width: 100%;
+      height: auto;
+      top: 0;
     }
   }
   .clients{
@@ -159,13 +162,39 @@
       grid-template-columns: repeat(3,minmax(130px, 1fr));
     }
   }
+  .software{
+    &__block{
+      flex-direction: column;
+    }
+    &__wrapper{
+      width: 100%;
+      order: 2;
+      justify-content: center;
+    }
+    &__card {
+      width: 225px;
+    }
+    &__info{
+      width: 100%;
+      margin: 0 0 40px 0;
+      order: 1;
+    }
+    &__laptop{
+      display: none;
+    }
+    &__pictures{
+      order: 2;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
   .price{
     &__slider{
       width: 90%;
     }
     &__cards{
-      flex-wrap: wrap;
-      justify-content: space-around;
       row-gap: 40px;
     }
     &__box{
@@ -174,39 +203,42 @@
     }
     .price-box{
       &__title{
-        margin-top: 15px;
+        margin-bottom: 15px;
       }
       &__list{
-        margin-top: 15px;
+        margin-bottom: 30px;
       }
       &__item{
         padding: 15px 20px;
-      }
-      &__btn{
-        margin-top: 15px;
       }
     }
   }
   .footer{
     &__content{
-      justify-content: space-around;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
+      gap: 20px;
     }
   }
 }
 @media (max-width: 767px) {
   .h1, h1 {
     font-size: 38px;}
-
   .h2, h2 {
     font-size: 32px; }
   .btn-primary{
     font-size: 16px;
+    &:hover{
+      background: initial;
+      color: initial;
+      transition: none;
+    }
   }
   .btn-secondary{
     font-size: 16px;
+    &:hover{
+      background: initial;
+      color: initial;
+      transition: none;
+    }
   }
   .container {
     max-width: 540px;
@@ -231,14 +263,6 @@
       }
     }
   }
-  .banner{
-    &__title{
-      @include before_dot(28%,15px,block);
-      span{
-        @include before_mini-dot(25%,16px,block);
-      }
-    }
-  }
   .clients{
     position: relative;
     &__wrapper{
@@ -247,98 +271,138 @@
       gap: 30px;
     }
   }
-  .software{
-    &__wrapper{
-      grid-template-columns: 282px;
+  .price{
+    &__box{
+      width: 240px;
     }
-    &__pictures{
-      width: 100%;
+    &__cards{
+      row-gap: 15px;
+    }
+    .price-box{
+      &__item{
+        padding-left: 15px;
+        align-items: center;
+      }
     }
   }
-
 }
 @media (max-width: 576px) {
+  .btn-secondary{
+    color: #FFFFFF;
+    &:hover{
+      color: #FFFFFF;
+    }
+  }
   .container {
     width: 100%;
   }
   .header{
+    margin-bottom: 50px;
     &__control{
       display: none;
+    }
+    &__mobile{
+      width: 70%;
     }
     .header-mobile{
       &__control{
         display: flex;
+        button{
+          color: #FFFFFF;
+        }
       }
     }
   }
   .banner{
+    margin-bottom: 50px;
     &__info{
       width: 100%;
     }
-    &__title{
-      @include before_dot(13%,15px,none);
-      span{
-        @include before_mini-dot(10%,16px,none);
-      }
+    &__link{
+      margin-right: 20px;
     }
-    &__picture{
-      display: none;
-    }
-    //&__form{
-    //  width: 100%;
-    //  .banner-form{
-    //    &__input{
-    //      padding: 10px 30px 10px 10px;
-    //    }
-    //  }
-    //}
+  }
+  .clients{
+    margin-bottom: 50px;
   }
   .software{
-    &__info{
-      max-width: 400px;
+    margin-bottom: 50px;
+    &__control{
+      button{
+        flex-grow: 1;
+        flex-basis: 0;
+      }
+    }
+    &__question{
+      color: #FF4D4D;
     }
   }
   .price{
-    &__cards{
-      margin-top: 40px;
-    }
-    &__switch{
-      display: none;
-    }
-    &__salary{
-      display: none;
-    }
+    margin-bottom: 50px;
     &__slider{
       display: none;
     }
+    &__salary{
+      margin-bottom: 40px;
+    }
+  }
+  .footer{
+    &__info{
+      width: 200px;
+    }
   }
 }
-//@media (max-width: 320px) {
-//  .container {
-//    width: 100%;
-//  }
-//  .header{
-//    &__control{
-//      display: none;
-//    }
-//    .header-mobile{
-//      &__control{
-//        display: block;
-//      }
-//    }
-//  }
-//  .banner{
-//    &__info{
-//      width: 100%;
-//    }
-//    &__title{
-//      @include before_dot(21%,15px);
-//      span{
-//        @include before_mini-dot(18%,16px);
-//      }
-//    }
-//    &__picture{
-//      display: none;
-//    }
-//  }
-//}
+@media (max-width: 499px){
+  .software{
+    &__card{
+      width: 185px;
+    }
+  }
+  .price{
+    &__box{
+      width: 100%;
+      margin-bottom: 40px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .footer{
+    &__info{
+      width: 180px;
+    }
+  }
+}
+@media (max-width: 425px){
+  .clients{
+    &__wrapper{
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      row-gap: 20px;
+    }
+  }
+  .software{
+    &__card{
+      width: 100%;
+    }
+  }
+  .footer{
+    &__info{
+      width: 160px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .banner{
+    &__link{
+      margin-right: 10px;
+    }
+  }
+  .footer{
+    &__info{
+      width: 220px;
+    }
+  }
+}

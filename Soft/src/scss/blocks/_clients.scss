@@ -1,16 +1,14 @@
 .clients{
-  margin-top: 110px;
+  margin-bottom: 110px;
   background: rgba(142, 230, 201, .1);
   &__wrapper{
     padding: 55px 0;
-    display: grid;
-    grid-template: minmax(40px, auto) / repeat(5, minmax(126px, auto));
-    row-gap: 30px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-  }
-  &__company{
-    max-height: 60px;
-    margin: auto auto;
+    row-gap: 20px;
   }
 }

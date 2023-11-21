@@ -34,9 +34,11 @@ gulp.task('styles', () =>
         .pipe(autoprefixer())
         .pipe(cleanCSS())
         .pipe(concat('style.min.css'))
-        .pipe(gulp.dest(`${paths.dist}/css`))
+        .pipe(gulp.dest(`${paths.dist}/css`)) // Save the minified file with .min.css extension
+        .pipe(gulp.dest(`${paths.dist}/css`)) // Copy the original file to the destination
         .pipe(bs.stream())
 );
+
 
 gulp.task('scripts', () =>
     gulp.src(paths.scripts)
@@ -49,20 +51,19 @@ gulp.task('scripts', () =>
 gulp.task('images', () =>
     gulp.src(paths.images)
         .pipe(newer(`${paths.dist}/img`))
-        .pipe(imagemin())
+        // .pipe(imagemin())
         .pipe(gulp.dest(`${paths.dist}/img`))
 );
 
 gulp.task('html', () =>
-    gulp.src(paths.html)
+    gulp.src('src/index.html')
         .pipe(plumber())
         .pipe(fileInclude({
             prefix: '@@',
-            basepath: '@file',
+            basepath: '@file'
         }))
-        .pipe(newer(paths.dist))
         .pipe(gulp.dest(paths.dist))
-        .pipe(bs.stream())
+        .pipe(bs.stream({ once: true }))
 );
 
 gulp.task('fonts', () =>
@@ -75,9 +76,16 @@ gulp.task('fonts', () =>
         .pipe(gulp.dest(`${paths.dist}/fonts`))
 );
 
+gulp.task('copyHtml', () =>
+    gulp.src('src/index.html')
+        .pipe(newer(paths.dist))
+        .pipe(gulp.dest(paths.dist))
+        .pipe(bs.stream())
+);
+
 gulp.task('cleanDist', () => deleteAsync(paths.dist));
 
-gulp.task('default', gulp.series('cleanDist', 'styles', 'scripts', 'images', 'html', 'fonts', () => {
+gulp.task('default', gulp.series('cleanDist', 'styles', 'scripts', 'images', 'html', 'fonts', 'copyHtml', () => {
     bs.init({
         server: {
             baseDir: paths.dist,

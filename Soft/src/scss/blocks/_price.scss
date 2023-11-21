@@ -1,6 +1,5 @@
 .price {
-  margin-top: 110px;
-
+  margin-bottom: 110px;
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -9,18 +8,19 @@
 
   &__title {
     color: #021206;
+    margin-bottom: 20px;
   }
 
   &__subtitle {
-    margin-top: 20px;
     max-width: 750px;
     text-align: center;
+    margin-bottom: 35px;
   }
 
   &__switch {
-    margin-top: 35px;
     display: flex;
     position: relative;
+    margin-bottom: 35px;
   }
 
   .price-switch {
@@ -71,7 +71,7 @@
 
   &__salary {
     display: flex;
-    margin-top: 35px;
+    margin-bottom: 80px;
   }
 
   &__caption {
@@ -84,11 +84,11 @@
     top: -13px;
   }
   &__slider {
-    margin-top: 80px;
     position: relative;
     width: 100%;
     border-radius: 37px;
     height: 10px;
+    margin-bottom: 80px;
   }
   .price-slider {
     &__input {
@@ -125,10 +125,18 @@
   }
   &__cards {
     position: relative;
-    margin-top: 80px;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    img{
+      &:first-child{
+        box-shadow: -4px 1px 80px rgba(246, 216, 135, 0.70);
+      }
+      &:last-child{
+        box-shadow: 0 4px 70px rgba(155, 215, 195, 0.80);
+      }
+    }
   }
   &__circle {
     border-radius: 100%;
@@ -156,8 +164,9 @@
     width: 361px;
     background-color: #FFFFFF;
     transition: .3s;
+    box-shadow: 0 20px 100px 0 transparent;
     &:hover {
-      border: none;
+      border: transparent;
       box-shadow: 0 20px 100px 0 rgba(2, 18, 6, 0.15);
     }
   }
@@ -167,11 +176,11 @@
       font-weight: 600;
     }
     &__title {
-      margin-top: 35px;
+      margin-bottom: 35px;
       color: #021206;
     }
     &__list {
-      margin-top: 35px;
+      margin-bottom: 35px;
       width: 100%;
     }
 
@@ -198,23 +207,19 @@
         }
       }
     }
-
     &__item-opacity {
       opacity: .5;
     }
-
     &__btn {
       padding: 13px 76px;
       background-color: #FFFFFF;
       color: #F44545;
       border: 1px solid rgba(244, 69, 69, .2);
-      margin-top: 40px;
       transition: .3s;
-
       &:hover {
         background-color: #F55454;
         color: #FFFFFF;
-        border: none;
+        border: 1px solid transparent;
       }
     }
   }

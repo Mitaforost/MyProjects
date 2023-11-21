@@ -1,31 +1,33 @@
 .software {
-  margin-top: 110px;
+  margin-bottom: 110px;
   position: relative;
   &:last-child{
     margin-top: 260px;
   }
   &__block {
-    display: grid;
-    grid-template-columns: minmax(524px, auto) minmax(524px, auto);
-    column-gap: 75px;
+    display: flex;
+    justify-content: space-between;
   }
   &__block-left{
     position: relative;
     left: -70px;
   }
   &__wrapper {
-    display: grid;
-    grid-template: minmax(290px, auto) / repeat(2, minmax(282px, auto));
-    grid-auto-rows: minmax(290px, auto);
-    gap: 30px;
+    width: 594px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
   }
   &__card {
+    width: 282px;
     padding: 35px 24px 35px 35px;
     border-radius: 10px;
     border: 1px solid rgba(2, 18, 6, 0.10);
+    box-shadow: 0 15px 65px 0 transparent;
     &:hover {
       box-shadow: 0 15px 65px 0 rgba(65, 77, 68, 0.15);
-      border: none;
+      border-color: transparent;
     }
   }
   &__box {
@@ -43,26 +45,26 @@
     padding-top: 10px;
   }
   &__info {
-    max-width: 480px;
+    width: 480px;
     margin: auto 0;
   }
   &-info-shift{
-    padding: 91px 0;
+    margin: 90px 0;
   }
   &__title{
     color: #021206;
+    margin-bottom: 20px;
   }
   &__subtitle {
-    padding-top: 20px;
+    margin-bottom: 15px;
   }
   &__desc {
-    padding-top: 15px;
+    margin-bottom: 30px;
     span {
       font-weight: 600;
     }
   }
   &__items {
-    padding-top: 20px;
   }
   &__item {
     position: relative;
@@ -74,7 +76,6 @@
     }
   }
   &__control {
-    padding-top: 30px;
     display: flex;
   }
   &__learn {
@@ -88,6 +89,9 @@
   &__question {
     color: #FF4D4D;
     font-weight: 500;
+    &:hover{
+      color: #021206;
+    }
   }
   &__laptop{
     position: absolute;
