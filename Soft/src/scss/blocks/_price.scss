@@ -167,6 +167,7 @@
     box-shadow: 0 20px 100px 0 transparent;
     &:hover {
       box-shadow: 0 20px 100px 0 rgba(2, 18, 6, 0.15);
+      border-color: transparent;
     }
   }
   .price-box {
