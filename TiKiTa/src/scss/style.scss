@@ -35,6 +35,7 @@ ul {
 .h2, h2 {
   font-size: 32px;
   line-height: normal;
+  text-align: center;
 }
 
 p {
@@ -59,5 +60,9 @@ p {
 }
 @import "blocks/button";
 @import "blocks/header";
+@import "blocks/wholesale";
+@import "blocks/networks";
+@import "blocks/advantages";
+@import "blocks/cooperation";
 
 @import "blocks/media";
