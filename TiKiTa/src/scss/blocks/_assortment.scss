@@ -1,0 +1,13 @@
+.assortment{
+  margin-bottom: 100px;
+  &__title{
+    color: #333333;
+    line-height: 140%;
+    margin-bottom: 50px;
+  }
+  &__wrap{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+}
