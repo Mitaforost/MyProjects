@@ -9,5 +9,28 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
+    margin-bottom: 50px;
+  }
+  &__more{
+    border-radius: 5px;
+    border: 1px solid #333;
+    padding: 13px 32px;
+    text-align: center;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 170%;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover{
+      background: #ffca33;
+      border: 1px solid #ffca33;
+    }
+  }
+  &__img{
+    margin-left: 10px;
   }
 }
