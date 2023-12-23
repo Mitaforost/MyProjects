@@ -1,69 +1,157 @@
 @media (max-width: 1250px) {
-  .container{
+  .container {
     width: 980px;
   }
-  h1{
+  h1 {
     font-size: 45px;
   }
-  .header{
-    &__nav{
+  .header {
+    &__nav {
       display: none;
     }
-    &__info{
+
+    &__info {
       grid-template-columns: 5fr 5fr;
       column-gap: 60px;
     }
   }
-  .trending{
-    &__wrap{
+  .trending {
+    &__wrap {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .assortment{
-    &__wrap{
+  .assortment {
+    &__wrap {
       grid-template-columns: repeat(3, 1fr);
     }
   }
-  .footer{
-    &__btn{
+  .contact {
+    &-form {
+      &__img {
+        right: -90px;
+        bottom: -100px;
+      }
+    }
+  }
+  .footer {
+    &__btn {
       padding: 30px 25px;
     }
-    &__info{
-      grid-gap: 30px;
+
+    &__info {
+      grid-gap: 25px;
       padding: 50px 0 90px 0;
     }
   }
 }
-@media (max-width: 1100px) {
-  .header{
-    &__nav{
-      display: none;
-    }
-    &__info{
-      column-gap: 50px;
-    }
-  }
-}
+
 @media (max-width: 991px) {
-  .header{
-    &__info{
+  .container {
+    width: 765px;
+  }
+  .btn-primary {
+    width: 333px;
+    margin: 0 auto;
+  }
+  .header {
+    &__inner {
+      padding-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    &__info {
+      padding: 0;
       display: flex;
       flex-direction: column;
     }
-    &__form{
-      .header-form{
-        &__title{
+
+    &__form {
+      margin-bottom: 50px;
+      .header-form {
+        &__title {
           max-width: 100%;
           text-align: center;
         }
-        &__text{
+
+        &__text {
           max-width: 100%;
           text-align: center;
         }
-        &__group{
+
+        &__group {
           grid-template-columns: repeat(3, 1fr);
         }
       }
+    }
+  }
+  .wholesale {
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+
+    &-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      &__top {
+        img{
+          height: 100%;
+        }
+      }
+    }
+  }
+  .advantages {
+    &__group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .cooperation {
+    &__cards {
+      grid-template-columns: 1fr;
+    }
+    .cooperation-card {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      &__top {
+        height: 330px;
+        &-img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        &-icon{
+          left: auto;
+          right: 20px;
+          bottom: auto;
+          top: 20px;
+        }
+      }
+    }
+  }
+  .contact {
+    &-form {
+      width: 100%;
+      padding: 30px 20px;
+
+      &__title {
+        font-size: 25px;
+      }
+
+      &__text {
+        font-size: 16px;
+      }
+
+      &__item {
+        font-size: 14px;
+      }
+    }
+  }
+  .footer {
+    &__btn {
+      display: none;
+    }
+
+    &__info {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
