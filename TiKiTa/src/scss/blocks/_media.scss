@@ -55,7 +55,7 @@
   }
   .header {
     &__inner {
-      padding-top: 20px;
+      padding-top: 35px;
       margin-bottom: 50px;
     }
 
@@ -67,6 +67,7 @@
 
     &__form {
       margin-bottom: 50px;
+
       .header-form {
         &__title {
           max-width: 100%;
@@ -89,12 +90,20 @@
       grid-template-columns: 1fr;
     }
 
-    &-card {
+    &__card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      height: 330px;
+    }
+
+    .wholesale-card {
       &__top {
-        img{
-          height: 100%;
+        position: relative;
+
+        img {
+          object-fit: cover;
+          height: 330px;
+          width: auto;
         }
       }
     }
@@ -108,17 +117,21 @@
     &__cards {
       grid-template-columns: 1fr;
     }
+
     .cooperation-card {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+
       &__top {
         height: 330px;
-        &-img{
+
+        &-img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
-        &-icon{
+
+        &-icon {
           left: auto;
           right: 20px;
           bottom: auto;
@@ -152,6 +165,354 @@
 
     &__info {
       grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header {
+    &__info {
+      grid-template-columns: 1fr;
+    }
+
+    &__inner {
+      margin-bottom: 40px;
+    }
+
+    &__title {
+      font-size: 45px;
+    }
+  }
+  .wholesale {
+    margin-bottom: 60px;
+
+    &__title {
+      max-width: 500px;
+      margin: 0 auto 40px auto;
+    }
+  }
+  .networks {
+    margin-bottom: 60px;
+  }
+  .cooperation {
+    padding: 60px 0;
+    margin: 0;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+  }
+  .contact_bg {
+    margin-bottom: 60px;
+  }
+  .contact {
+    padding: 70px 0;
+  }
+  .advantages {
+    margin-bottom: 60px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__group {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  }
+  .trending {
+    margin-bottom: 60px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__wrap {
+      grid-gap: 20px;
+    }
+  }
+  .assortment {
+    margin-bottom: 60px;
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__wrap {
+      grid-gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 669px) {
+  .btn-primary {
+    width: 100%;
+    font-size: 14px;
+  }
+  .header {
+    margin-bottom: 50px;
+
+    &__top {
+      padding: 0;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__phone-link {
+      font-size: 20px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__inner {
+      padding-top: 40px;
+    }
+
+    &__advantages {
+      padding-top: 30px;
+    }
+
+    &__form {
+      padding: 30px 20px;
+
+      .header-form {
+        &__title {
+          text-align: left;
+        }
+
+        &__text {
+          text-align: left;
+        }
+
+        &__group {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+  .wholesale {
+    margin-bottom: 50px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__card {
+      grid-template-columns: 1fr;
+      height: max-content;
+
+      .wholesale-card {
+        &__top {
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+  .networks {
+    margin-bottom: 50px;
+
+    &__item {
+      span {
+        display: none;
+      }
+    }
+  }
+  .advantages {
+    margin-bottom: 50px;
+
+    &__title {
+      font-size: 20px;
+    }
+  }
+  .cooperation {
+    padding: 50px 0;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    .cooperation-card {
+      grid-template-columns: 1fr;
+    }
+  }
+  .contact_bg {
+    margin-bottom: 50px;
+  }
+  .contact {
+    padding: 50px 0;
+
+    .contact-form {
+      &__title {
+        font-size: 20px;
+        text-align: left;
+      }
+
+      &__text {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      &__group {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      &__btn {
+        width: 100%;
+      }
+    }
+
+    &__form {
+      padding: 30px 20px;
+    }
+
+  }
+  .trending {
+    margin-bottom: 50px;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__wrap {
+      grid-template-columns: 1fr;
+    }
+
+    &__item {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+
+    &__photo {
+      margin: 0;
+    }
+  }
+  .assortment {
+    margin-bottom: 50px;
+    &__title {
+      font-size: 20px;
+    }
+    &__wrap {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .footer{
+    margin-top: -50px;
+    &__top{
+      flex-direction: column;
+    }
+    &__text{
+      margin-top: 10px;
+    }
+  }
+}
+@media (max-width: 560px){
+  .header {
+    &__form {
+      .header-form {
+
+
+        &__text {
+          text-align: left;
+          max-width: 250px;
+        }
+
+        &__group {
+          grid-template-columns: 1fr;
+        }
+      }
+    }
+  }
+  .networks {
+    &__title{
+      text-align: center;
+    }
+  }
+  .cooperation {
+    .cooperation-card {
+      &__top{
+        &-icon {
+          right: auto;
+          top: auto;
+          bottom: -20px;
+          left: 20px;
+        }
+      }
+    }
+  }
+  .contact{
+    &-form{
+      &__text{
+        text-align: left;
+        max-width: 250px;
+      }
+      &__btn {
+        font-size: 14px;
+        padding: 24px 0 24px 0;
+        margin: 0 auto;
+      }
+    }
+  }
+  .assortment{
+    &__more{
+      font-size: 12px;
+      text-align: left;
+    }
+  }
+}
+@media (max-width: 474px) {
+  .header {
+    &__form {
+      .header-form {
+        &__title {
+          text-align: left;
+          max-width: 250px;
+        }
+      }
+    }
+  }
+  .contact{
+    &-form{
+      &__title{
+        text-align: left;
+        max-width: 250px;
+      }
+    }
+  }
+  .networks{
+    &__group{
+      grid-gap: 20px;
+    }
+    &__item{
+      padding: 10px 20px;
+    }
+  }
+  .footer{
+    &__info{
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+      padding: 40px 0 60px 0;
+    }
+    &__row{
+      flex-direction: column;
+    }
+    .footer-row{
+      &__text{
+        margin-bottom: 15px;
+        &:last-child{
+          margin: 0;
+        }
+      }
     }
   }
 }

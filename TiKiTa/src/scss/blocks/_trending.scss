@@ -12,14 +12,14 @@
   &__item{
     border-radius: 5px;
     border: 1px solid #F2F2F2;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
     &:hover{
       border-radius: 5px;
       border: 1px solid #F2F2F2;
       box-shadow: 5px 10px 15px 5px rgba(120, 120, 120, 0.10);
     }
-  }
-  &__group{
-    padding: 20px;
   }
   &__photo{
     margin-bottom: 10px;

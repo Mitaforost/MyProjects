@@ -18,6 +18,14 @@
     }
   }
   .wholesale-card{
+    &__top{
+      position: relative;
+      img{
+        object-fit: cover;
+        height: 100%;
+        width: auto;
+      }
+    }
     &__content{
       padding: 20px 15px 28px 15px;
     }
