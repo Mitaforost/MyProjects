@@ -19,9 +19,9 @@ window.addEventListener("load", function () {
 
     let boxes = document.querySelectorAll('.price__box'),
         input = document.querySelector('.price-slider__input'),
+        progress = document.querySelector('.slider-progress'),
         output = document.querySelector('.price-slider__output'),
         before = document.querySelector('.price-slider__output::before');
-
     boxes.forEach(box => {
         box.addEventListener('mouseover', function () {
             let title = this.querySelector('.price-box__title');
@@ -30,6 +30,7 @@ window.addEventListener("load", function () {
 
             input.value = value;
             output.innerText = `$${value}`;
+            progress.style.setProperty('--value', value);
 
             // Позиционируем элемент before
             positionBeforeElement(value);
