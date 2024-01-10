@@ -1,0 +1,28 @@
+.parameters {
+  margin-bottom: 100px;
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 80px;
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+    line-height: 100%;
+    font-weight: 500;
+  }
+  &__item {
+    margin-bottom: 10px;
+    font-size: 18px;
+    span{
+      font-weight: 500;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

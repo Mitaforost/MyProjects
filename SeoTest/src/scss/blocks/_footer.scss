@@ -1,0 +1,26 @@
+.footer {
+  background: #F2E2CE;
+
+  &__inner {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__link {
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .3s;
+    &:hover {
+      color: #D99177;
+    }
+  }
+}

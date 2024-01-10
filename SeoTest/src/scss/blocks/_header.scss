@@ -1,0 +1,43 @@
+.header {
+  background: #F2E2CE;
+  margin-bottom: 100px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px 0;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-left: 20px;
+      font-size: 20px;
+      font-weight: 700;
+      color: #D99177;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__item {
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &__link {
+    transition: all .3s;
+    &:hover {
+      color: #D99177;
+    }
+  }
+}

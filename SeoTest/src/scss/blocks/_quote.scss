@@ -1,0 +1,22 @@
+.quote {
+  margin-bottom: 100px;
+  &__text {
+    position: relative;
+    font-size: 18px;
+    padding-left: 20px;
+    span{
+      font-weight: 500;
+      color: #D99177;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: #D99177;
+      border-radius: 10px;
+    }
+  }
+}

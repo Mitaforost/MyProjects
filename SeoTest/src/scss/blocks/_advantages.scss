@@ -1,0 +1,18 @@
+.advantages {
+  margin-bottom: 100px;
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__list{
+    margin-bottom: 20px;
+  }
+  &__item {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

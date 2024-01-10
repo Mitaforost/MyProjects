@@ -7,43 +7,72 @@
 input,
 *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Acrom', sans-serif;
   margin: 0;
   padding: 0;
 }
-body{
+
+body {
   padding: 0;
 }
-.container{
+
+.container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
-ul{
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .h1, h1 {
-  font-size: 54px;
-  font-weight: 600;
-  line-height: normal; }
+  font-size: 42px;
+  font-weight: 700;
+  color: #D99177;
+  line-height: normal;
+}
+
 .h2, h2 {
-  font-size: 45px;
-  font-weight: 600;
-  line-height: normal; }
+  font-size: 30px;
+  font-weight: 500;
+  color: #D99177;
+  line-height: normal;
+}
+
 p {
   font-size: 18px;
-  line-height: 160%; }
+  line-height: 160%;
+}
+
 .p1 {
-  font-size: 21px;}
+  font-size: 21px;
+}
 
 .p2 {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .p3 {
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 .p4 {
-  font-size: 16px; }
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
 
 @import "blocks/media";
+@import "blocks/header";
+@import "blocks/note";
+@import "blocks/parameters";
+@import "blocks/quote";
+@import "blocks/advantages";
+@import "blocks/price";
+@import "blocks/footer";
