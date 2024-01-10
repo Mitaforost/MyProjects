@@ -1,11 +1,12 @@
-@media (max-width: 1600px) {
-
-}
-@media (max-width: 1440px) {
-
-}
-@media (max-width: 1200px) {
-
+@media (max-width: 1240px) {
+  .container {
+    max-width: 960px;
+  }
+  .parameters{
+    .parameters__inner{
+        column-gap: 20px;
+    }
+  }
 }
 @media (max-width: 1024px) {
 

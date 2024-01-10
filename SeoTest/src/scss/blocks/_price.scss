@@ -39,7 +39,7 @@
   }
   &__image{
     width: 100%;
-    height: auto;
+    max-height: 500px;
     object-fit: cover;
   }
 }
@@ -50,7 +50,7 @@ table {
 
 th, td {
   border: 1px solid #D99177;
-  padding: 8px;
+  padding: 10px 0;
   text-align: center;
 }
 
