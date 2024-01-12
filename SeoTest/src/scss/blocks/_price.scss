@@ -1,7 +1,6 @@
 .price{
   margin-bottom: 100px;
   &__title{
-    margin-bottom: 30px;
     text-align: center;
   }
   &__slider{
@@ -46,6 +45,7 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  overflow-x: scroll;
 }
 
 th, td {

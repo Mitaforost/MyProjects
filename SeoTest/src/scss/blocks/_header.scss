@@ -1,7 +1,7 @@
 .header {
+  position: relative;
   background: #F2E2CE;
-  margin-bottom: 100px;
-
+  z-index: 20;
   &__inner {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -36,8 +36,46 @@
 
   &__link {
     transition: all .3s;
+
     &:hover {
       color: #D99177;
     }
   }
+  &__btn {
+    display: none;
+    padding: 8px;
+    background-color: #D99177;
+    border: 1px solid #D99177;
+    border-radius: 10px;
+  }
+  &__line{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #F2E2CE;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    &:last-child{
+      width: 15px;
+      margin-bottom: 0;
+    }
+  }
+  &__close{
+    display: none;
+  }
+  &__mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    width: 70%;
+    max-width: 350px;
+    background-color: #F2E2CE;
+    transition: all .3s;
+    z-index: 10;
+    padding: 20px 0 0 15px;
+  }
+}
+.active {
+  display: block;
 }

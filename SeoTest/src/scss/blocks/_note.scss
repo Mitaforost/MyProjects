@@ -1,10 +1,12 @@
 .note {
   margin-bottom: 100px;
   &__title {
-    margin-bottom: 30px;
     text-align: center;
   }
   &__text {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

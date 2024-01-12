@@ -40,4 +40,48 @@ addEventListener('load', () => {
         showSlide(slideIndex);
         updateDots();
     }, 5000);
+
+    const mobileBtn = document.querySelector('.header__btn'),
+        fade = document.querySelector('.fade'),
+        headerMobile = document.querySelector('.header__mobile'),
+        crossIcon = document.querySelector('.header__close'),
+        spanIcons = document.querySelectorAll('.header__line');
+
+    mobileBtn.addEventListener('click', toggleMenu);
+    fade.addEventListener('click', closeMenu);
+
+    function toggleMenu() {
+        headerMobile.classList.toggle('active');
+
+        if (headerMobile.classList.contains('active')) {
+            showMenu();
+        } else {
+            hideMenu();
+        }
+    }
+
+    function showMenu() {
+        crossIcon.style.display = 'block';
+        spanIcons.forEach(span => span.style.display = 'none');
+        headerMobile.style.left = '0';
+        setFadeStyles('block', '0.6');
+    }
+
+    function hideMenu() {
+        crossIcon.style.display = 'none';
+        spanIcons.forEach(span => span.style.display = 'block');
+        headerMobile.style.left = `-${headerMobile.offsetWidth}px`;
+        setFadeStyles('none', '0');
+    }
+
+    function setFadeStyles(display, opacity) {
+        fade.style.display = display;
+        fade.style.opacity = opacity;
+    }
+
+    function closeMenu() {
+        headerMobile.classList.remove('active');
+        hideMenu();
+    }
+
 });
