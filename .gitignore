@@ -8,3 +8,5 @@
 *.sw?
 **/node_modules/
 package-lock.json
+Gitlab-test
+GitLab-basicks
