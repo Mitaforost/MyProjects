@@ -1,0 +1,42 @@
+//.btn-favorite {
+//  position: relative;
+//  display: flex;
+//  background-color: #FFFFFF;
+//  border-radius: 12px;
+//  border: none;
+//  padding: 8px 6px;
+//  cursor: pointer;
+//  color: #6E7284;
+//
+//  &:hover {
+//    background-color: #F8F8F8;
+//    color: #0A4ECB;
+//  }
+//
+//  &__icon {
+//    &-unactive {
+//      display: none;
+//    }
+//  }
+//  &--orange {
+//    color: #F04716;
+//    &:hover {
+//      background-color: #F04716;
+//      color: #FFFFFF;
+//    }
+//  }
+//}
+
+//<button class="btn-favorite btn-favorite--orange">
+//<svg class="btn-favorite__icon btn-favorite__icon-active" width="24" height="20">
+//<use xlink:href="img/svg/sprite.svg#plus-heart"></use>
+//</svg>
+//<svg class="btn-favorite__icon btn-favorite__icon-unactive" width="24" height="20">
+//<use xlink:href="img/svg/sprite.svg#plus-heart-or"></use>
+//</svg>
+//</button>
+//<button class="btn-favorite">
+//<svg class="btn-favorite__icon" width="24" height="20">
+//<use xlink:href="img/svg/sprite.svg#default-cart"></use>
+//</svg>
+//</button>

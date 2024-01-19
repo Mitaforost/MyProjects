@@ -32,6 +32,7 @@
     "not dead"
   ],
   "dependencies": {
+    "gulp-svg-sprite": "^2.0.3",
     "nouislider": "^15.7.1",
     "sass": "^1.69.5"
   }
