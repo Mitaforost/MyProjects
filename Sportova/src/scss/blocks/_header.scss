@@ -1,6 +1,9 @@
 .header {
-  &__bg-color {
+  &__bg-colorOne {
     background-color: #F4F5F8;
+  }
+  &__bg-colorTwo {
+    background-color: #0A4ECB;
   }
 
   &__top {
@@ -25,9 +28,16 @@
   }
 
   &__icon-block {
+    position: relative;
     display: inline-block;
     width: 16px;
     height: 16px;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__nav {
@@ -37,16 +47,19 @@
     }
 
     &-item {
+      display: flex;
       margin-right: 30px;
       font-size: 13px;
       font-weight: 600;
       color: #6E7284;
-      transition: all .3s;
+      align-items: center;
 
       &:last-child {
         margin-right: 0;
       }
-
+    }
+    &-link{
+      transition: all .3s;
       &:hover {
         color: #F04716;
       }
@@ -104,12 +117,41 @@
       border: 1px solid #DEDFE7;
       padding-left: 45px;
       padding-right: 20px;
+      &:focus-visible{
+        outline: none;
+        border: 1px solid #0A4ECB;
+      }
     }
   }
   &-elements__item {
     margin-right: 10px;
     &:last-child {
       margin-right: 0;
+    }
+  }
+  &__topmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-item {
+      position: relative;
+      display: flex;
+      padding: 18px 30px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #FFFFFF;
+      align-items: center;
+      transition: all .3s;
+      &:hover {
+        background-color: #04358F;
+      }
+    }
+    &-link {
+      display: flex;
+        transition: all .3s;
+      &:hover {
+        color: #FFFA2F;
+      }
     }
   }
 }

@@ -51,7 +51,13 @@ p {
 .p4 {
   font-size: 16px; }
 
-
+.cl-blue{
+  color: #0A4ECB;
+}
+.mr-10{
+  margin-right: 10px;
+  margin-left: 10px;
+}
 @import "blocks/svg";
 @import "blocks/button";
 @import "blocks/header";
