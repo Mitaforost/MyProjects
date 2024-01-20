@@ -16,6 +16,7 @@ body{
 }
 .container{
   max-width: 1200px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 ul{
@@ -33,20 +34,26 @@ ul{
   line-height: normal; }
 p {
   font-size: 18px;
-  line-height: 160%; }
+  line-height: 133%; }
 .p1 {
-  font-size: 21px;}
+  font-size: 15px;
+  line-height: 160%;}
 
 .p2 {
-  font-size: 20px; }
+  font-size: 13px;
+  font-weight: 500;
+  line-height: normal;}
 
 .p3 {
-  font-size: 18px; }
+  font-size: 11px;
+}
 
 .p4 {
   font-size: 16px; }
 
-@import "blocks/svg";
 
+@import "blocks/svg";
+@import "blocks/button";
+@import "blocks/header";
 
 @import "blocks/media";

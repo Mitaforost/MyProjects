@@ -4,17 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="description" content="Описание cайта">
-    <link rel="icon" href="/img/icon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/img/icon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/img/icon/android-chrome-512x512.png">
+    <link rel="icon" href="/img/icon/logo.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Название сайта</title>
+    <title>Sportnova</title>
 </head>
 
 <body>
-<header>
-
+<header class="header">
+    <div class="header__bg-color">
+        <div class="container">
+            <div class="header__top">
+                <a class="header__city-link">
+                    <div class="header__icon-block">
+                        <svg width="12" height="12">
+                            <use xlink:href="img/svg/sprite.svg#city"></use>
+                        </svg>
+                    </div>
+                    Нижний Новгород
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Акции</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Как заказать</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">О компании</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Доставка и Оплата</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Гарантии</a></li>
+                        <li class="header__nav-item"><a href="#" class="header__nav-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__phone">
+                    <div class="header__icon-block">
+                        <svg width="12" height="12">
+                            <use xlink:href="img/svg/sprite.svg#clock"></use>
+                        </svg>
+                    </div>
+                    <span class="header__phone-text">8800 550-22-16</span>
+                    <a href="tel:88005502216" class="header__phone-link">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header__center">
+            <a href="#" class="header__logo">
+                <svg width="260" height="62">
+                    <use xlink:href="img/svg/sprite.svg#default-logo"></use>
+                </svg>
+            </a>
+            <div class="header__elements header-elements">
+                <div class="header__search header-elements__item">
+                    <svg width="18" height="18">
+                        <use xlink:href="img/svg/sprite.svg#search"></use>
+                    </svg>
+                    <input type="text" class="header__search-input" placeholder="Поиск по сайту">
+                </div>
+                <a class="btn-favorite header-elements__item">
+                    <svg width="22" height="18">
+                        <use xlink:href="img/svg/sprite.svg#default-heart"></use>
+                    </svg>
+                </a>
+                <a class="btn-favorite header-elements__item">
+                    <svg width="22" height="20">
+                        <use xlink:href="img/svg/sprite.svg#default-comprasion"></use>
+                    </svg>
+                </a>
+                <a class="btn-favorite header-elements__item">
+                    <svg width="22" height="19">
+                        <use xlink:href="img/svg/sprite.svg#default-cart"></use>
+                    </svg>
+                    <div class="btn-favorite__inner">
+                        <p class="p2">Корзина (<span>0</span>)</p>
+                        <p class="p3">Нет товаров</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
 </header>
 <main>
 
