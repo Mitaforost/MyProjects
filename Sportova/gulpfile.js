@@ -3,7 +3,10 @@ import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import ttf2woff from 'gulp-ttf2woff';
 import ttf2woff2 from 'gulp-ttf2woff2';
-
+import browserify from 'browserify';
+import source from 'vinyl-source-stream';
+import bro from 'gulp-bro';
+import babelify from 'babelify';
 const sass = gulpSass(dartSass);
 import autoprefixer from 'gulp-autoprefixer';
 import cleanCSS from 'gulp-clean-css';
@@ -43,11 +46,19 @@ gulp.task('styles', () =>
 
 gulp.task('scripts', () =>
     gulp.src(paths.scripts)
+        .pipe(plumber())
+        .pipe(newer(`${paths.dist}/js`))
+        .pipe(bro({
+            transform: [
+                babelify.configure({ presets: ['@babel/preset-env'] })
+            ]
+        }))
         .pipe(concat('script.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(`${paths.dist}/js`))
         .pipe(bs.stream())
 );
+
 
 gulp.task('images', () =>
     gulp.src(paths.images)
@@ -86,7 +97,6 @@ gulp.task('copyHtml', () =>
         .pipe(gulp.dest(paths.dist))
         .pipe(bs.stream())
 );
-
 gulp.task('svgSprite', () =>
     gulp.src('src/img/svg-source/*.svg')
         .pipe(svgSprite({

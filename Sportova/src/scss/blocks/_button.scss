@@ -29,3 +29,28 @@
   color: #FFFFFF;
   cursor: pointer;
 }
+.btn-primary{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 36px;
+  border: none;
+  background: var(--Linear, linear-gradient(90deg, #F04716 0%, #FFC62F 100%));
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+}
+.btn-arrow{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 13px;
+  border: none;
+  background-color: rgba(54, 56, 63, 0.25);
+  cursor: pointer;
+  border-radius: 50%;
+  color: #FFFFFF;
+}

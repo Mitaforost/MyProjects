@@ -1,0 +1,42 @@
+.assortment {
+  margin-bottom: 60px;
+
+  &__title {
+    color: #36383F;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 15px 25px 0 rgba(48, 63, 115, 0);
+    transition: all 0.3s;
+    background-color: #FFFFFF;
+
+    &:hover {
+      box-shadow: 0 15px 25px 0 rgba(48, 63, 115, 0.15);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-content {
+    &__img {
+      max-width: 280px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    &__subtitle {
+      color: #36383F;
+      margin-bottom: 35px;
+    }
+    &__order {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
