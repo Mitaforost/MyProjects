@@ -1,12 +1,21 @@
 .assortment {
+  position: relative;
   margin-bottom: 60px;
 
   &__title {
     color: #36383F;
     margin-bottom: 20px;
   }
-
+  &__wrapper {
+    position: relative;
+  }
+  &__list {
+    max-height: 520px;
+  }
   &__item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 15px 25px 0 rgba(48, 63, 115, 0);
@@ -21,22 +30,101 @@
   &__content {
     display: flex;
     flex-direction: column;
+    position: relative;
+    height: 100%;
   }
 
   &-content {
+    &__state {
+      display: none;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    &__state-btn {
+      margin-right: 10px;
+      background-color: #FFFFFF;
+      color: #F04716;
+      padding: 12px 10px 12px 12px;
+      &:hover {
+        background-color: #F04716;
+        border: 1px solid #F04716;
+      }
+    }
+    &__like-btn {
+      background-color: #FFFFFF;
+      color: #F04716;
+      padding: 14px 10px 14px 12px;
+      &:hover {
+        background-color: #F04716;
+        border: 1px solid #F04716;
+        color: #FFFFFF;
+      }
+    }
     &__img {
       max-width: 280px;
       width: 100%;
       margin-bottom: 10px;
     }
+
     &__subtitle {
       color: #36383F;
       margin-bottom: 35px;
     }
+
     &__order {
+      margin-top: auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
+    &__prices{
+      position: relative;
+    }
+    &__price-sale {
+      position: absolute;
+      top: -15px;
+      color: #A3A6B2;
+      font-size: 15px;
+      font-weight: 400;
+      text-decoration: line-through;
+    }
+    &__price {
+      font-size: 21px;
+      font-weight: 400;
+      color: #36383F;
+    }
+    &__btn {
+      &:hover {
+        border: 1px solid #F04716;
+        background-color: #F04716;
+      }
+    }
   }
+  &-prev, &-next{
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #DEDFE7;
+    z-index: 20;
+    color: #F04716;
+    &::after{
+      content: '';
+    }
+  }
+  &-prev{
+    left: -76px;
+  }
+  &-next{
+    right: -76px;
+  }
+}
+.swiper-buttons-container{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
 }

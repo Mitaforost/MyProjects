@@ -18,15 +18,16 @@ const swiperBanner = new Swiper('.banner__wrapper', {
     }
 })
 
-const swiperAssortment = new Swiper('.assortment__wrapper', {
-    slidesPerView: 4,
-    spaceBetween: 20,
-    loop: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-        delay: 3000,
-    }
-})
+const assortmentWrappers = document.querySelectorAll('.assortment__wrapper');
+assortmentWrappers.forEach((wrapper, index) => {
+    const swiperAssortment = new Swiper(wrapper, {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: document.querySelectorAll('.assortment-next')[index],
+            prevEl: document.querySelectorAll('.assortment-prev')[index],
+        },
+    });
+});
+
