@@ -22,32 +22,14 @@
     </div>
     <div class="container">
         <div class="header__center">
-            <a href="#" class="header__logo">
-                <svg width="260" height="62">
-                    <use xlink:href="img/svg/sprite.svg#default-logo"></use>
-                </svg>
-            </a>
+            <a href="#" class="header__logo"></a>
             <div class="header__elements header-elements">
-                <div class="header__search header-elements__item">
-                    <svg width="18" height="18">
-                        <use xlink:href="img/svg/sprite.svg#search"></use>
-                    </svg>
+                <div class="header__search header-elements__item search">
                     <input type="text" class="header__search-input" placeholder="Поиск по сайту">
                 </div>
-                <a class="btn-favorite header-elements__item">
-                    <svg width="22" height="18">
-                        <use xlink:href="img/svg/sprite.svg#default-heart"></use>
-                    </svg>
-                </a>
-                <a class="btn-favorite header-elements__item">
-                    <svg width="22" height="20">
-                        <use xlink:href="img/svg/sprite.svg#default-comprasion"></use>
-                    </svg>
-                </a>
-                <a class="btn-favorite header-elements__item">
-                    <svg width="22" height="19">
-                        <use xlink:href="img/svg/sprite.svg#default-cart"></use>
-                    </svg>
+                <a href="#" class="btn-favorite header-elements__item default-heart"></a>
+                <a href="#" class="btn-favorite header-elements__item default-comprasion"></a>
+                <a href="#" class="btn-favorite header-elements__item default-cart">
                     <div class="btn-favorite__inner">
                         <p class="p2">Корзина (<span>0</span>)</p>
                         <p class="p3">Нет товаров</p>
@@ -61,14 +43,8 @@
             <div class="container">
                 <ul class="header__topmenu">
                     <li class="header__topmenu-item">
-                        <a href="#" class="header__topmenu-link">
-                            <svg width="12" height="8">
-                                <use xlink:href="img/svg/sprite.svg#burger-menu"></use>
-                            </svg>
+                        <a href="#" class="header__topmenu-link catalog">
                             <span>Каталог товаров</span>
-                            <svg width="10" height="7">
-                                <use xlink:href="img/svg/sprite.svg#list-arrow"></use>
-                            </svg>
                         </a>
                         <ul class="header__submenu">
                             <li class="header__submenu-item"><a href="#">Щведские стенки</a></li>
@@ -176,12 +152,53 @@
                         <a href="#" class="header__topmenu-link">Тяжелая атлетика</a>
                     </li>
                     <li class="header__topmenu-item">
-                        <a href="#" class="header__topmenu-link">
-                            <svg width="10" height="10">
-                                <use xlink:href="img/svg/sprite.svg#sale"></use>
-                            </svg>
+                        <a href="#" class="header__topmenu-link sale">
                             <span>Товары со скидкой</span>
                         </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header__fixed">
+        <div class="container">
+            <div class="header__fixed-wrapper">
+                <a href="#" class="header__fixed-logo"></a>
+                <ul class="header__fixed-menu">
+                    <li class="header__fixed-menu-item">
+                        <a href="#" class="header__fixed-menu-link">Шведские стенки</a>
+                    </li>
+                    <li class="header__fixed-menu-item">
+                        <a href="#" class="header__fixed-menu-link">Уличные комплексы</a>
+                    </li>
+                    <li class="header__fixed-menu-item">
+                        <a href="#" class="header__fixed-menu-link">Турники</a>
+                    </li>
+                    <li class="header__fixed-menu-item">
+                        <a href="#" class="header__fixed-menu-link">Тяжелая атлетика</a>
+                    </li>
+                    <li class="header__fixed-menu-item">
+                        <a href="#" class="header__fixed-menu-link">Каталог товаров</a>
+                    </li>
+                </ul>
+                <ul class="header__fixed-buttons">
+                    <li class="header__fixed-buttons-item header__fixed-search search hidden">
+                        <input type="text" class="header__search-input" placeholder="Поиск по сайту">
+                    </li>
+                    <li class="header__fixed-buttons-item">
+                        <button class="btn-favorite default-heart"></button>
+                    </li>
+                    <li class="header__fixed-buttons-item">
+                        <button class="btn-favorite search"></button>
+                    </li>
+                    <li class="header__fixed-buttons-item">
+                        <button class="btn-favorite default-comprasion"></button>
+                    </li>
+                    <li class="header__fixed-buttons-item">
+                        <button class="btn-favorite default-call"></button>
+                    </li>
+                    <li class="header__fixed-buttons-item">
+                        <button class="btn-favorite default-cart"></button>
                     </li>
                 </ul>
             </div>

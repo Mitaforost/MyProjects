@@ -1,4 +1,4 @@
-const header = (targetElement, optionsBefore, optionsAfter, order = 'before') => {
+const headerIcon= (targetElement, optionsBefore, optionsAfter, order = 'before') => {
     const target = document.querySelector(targetElement);
 
     if (order === 'before') {
@@ -32,4 +32,4 @@ const createIconElement = (options) => {
     return divElement;
 };
 
-export default header;
+export default headerIcon;

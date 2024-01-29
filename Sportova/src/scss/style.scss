@@ -86,7 +86,10 @@ p {
   width: auto;
   height: auto;
 }
-
+.hidden{
+  width: 0;
+  margin: 0;
+}
 @import "blocks/svg";
 @import "blocks/button";
 @import "blocks/header";
