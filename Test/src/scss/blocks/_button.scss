@@ -1,0 +1,49 @@
+.btn-primary {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: transparent;
+  border-radius: 24px;
+  padding: 14px;
+  border: 2px solid #9DADF2;
+  display: flex;
+  cursor: pointer;
+  transition: all .3s;
+  line-height: 100%;
+  text-transform: uppercase;
+  svg{
+    margin-right: 8px;
+  }
+  &:hover {
+    background-color: #478BF9;
+    border: 2px solid #478BF9;
+  }
+}
+.btn-secondary{
+  display: flex;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #478BF9;
+  border-radius: 32px;
+  border: none;
+  padding: 20px 72px;
+  transition: all .3s;
+  &:hover {
+    background-color: #9DADF2;
+  }
+}
+.btn-menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .3s;
+}

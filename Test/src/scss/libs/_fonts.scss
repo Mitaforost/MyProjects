@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Lexend-Regular"),
+  url("../../fonts/Lexend-Regular.woff") format('woff'),
+  url("../../fonts/Lexend-Regular.woff2") format('woff2');
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Lexend-Medium"),
+  url("../../fonts/Lexend-Medium.woff") format('woff'),
+  url("../../fonts/Lexend-Medium.woff2") format('woff2');
+}
+@font-face {
+  font-family: Montserrat;
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+  src: local("Lexend-SemiBold"),
+  url("../../fonts/Lexend-SemiBold.woff") format('woff'),
+  url("../../fonts/Lexend-SemiBold.woff2") format('woff2');
+}
