@@ -1,0 +1,13 @@
+.languageButton {
+    background-color: transparent;
+    border-color: black;
+    width: 10vh;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    text-align-last: center;
+}
+
+select::-ms-expand {
+    display: none;
+}

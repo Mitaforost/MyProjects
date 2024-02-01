@@ -1,0 +1,56 @@
+* {
+  font-family: "Sen", sans-serif;
+}
+.customDot {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+  width: 25px;
+  transform: translate(-30%, -35%);
+  height: 25px;
+  display: flex;
+}
+.progressDot {
+  width: 950px;
+}
+.customDotBlock > span span{
+  left: 0 !important;
+}
+
+.progressBlock {
+  height: auto;
+  display: flex;
+  justify-items: center;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 800;
+  align-items: center;
+  justify-content: center;
+}
+.progressBlock h2 {
+  font-weight: 800;
+  font-size: 40px;
+  color: #fff;
+}
+.registerLink {
+  font-size: 20px;
+  display: flex;
+}
+.registerLink span {
+  color: #ffa41b;
+  font-weight: 400;
+}
+.registerLink p {
+  margin: 0 10px 0 0;
+}
+.registerBlock {
+  background-image: url("../../images/registerImages/registerback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr;
+}

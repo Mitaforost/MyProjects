@@ -1,0 +1,13 @@
+{
+  "register": {
+    "firstname": "Имя",
+    "lastname": "Фамилия",
+    "middlename": "Отчество",
+    "email": "Электронная почта",
+    "login": "Логин",
+    "password": "Пароль"
+  },
+  "mainPage": {
+    "coming": "приветствует вас"
+  }
+}

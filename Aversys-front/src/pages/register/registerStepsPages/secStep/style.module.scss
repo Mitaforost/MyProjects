@@ -1,0 +1,73 @@
+.secondStepBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+
+.secondStepBlock input::placeholder {
+  color: #a2a2a2;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.secondStepBlock > div > form > span > div {
+  margin-bottom: 10px;
+}
+
+.secondStepBlock input {
+  background-color: black;
+  width: 287px;
+  color: #fff;
+  height: 40px;
+  padding: 0 15px;
+  border: 3px solid #a2a2a2;
+  border-radius: 18px;
+}
+.secondStepBlock form {
+  width: 480px;
+  padding: 40px 0 0 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.secondStepBlock > div:first-child {
+  border: 4px solid #a2a2a2;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+.secondStepBlock p {
+  color: #a2a2a2;
+  margin: 12px 0 24px 0;
+  width: 302px;
+  font-weight: 800;
+  text-align: center;
+}
+.secondStepBlock button {
+  margin: 15px 0 30px;
+  width: 147px;
+  border-radius: 16px;
+  color: #000;
+  font-weight: 800;
+}
+.buttonBlock {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.autorizeLink {
+  margin: 68px 0 0 0;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
+}
+.autorizeLink span {
+  color: #ffa41b;
+  margin: 0 0 0 10px;
+}

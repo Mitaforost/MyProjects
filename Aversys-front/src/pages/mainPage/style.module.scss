@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+.mainPage {
+  font-family: 'Sen';
+}
+
+.mainPageHeader {
+  height: 520px;
+  width: 100%;
+  background: url("../../images//mainPageImages/moneygold.png");
+  background-size: cover;
+  text-align: center;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.logoImage {
+  width: 207px;
+  height: 207px;
+  background-color: white;
+  border-radius: 50%;
+  line-height: 207px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 360px;
+}
+
+.logoImage img {
+  width: 156px;
+  height: 132px;
+
+}
+
+.mainText {
+  width: 100%;
+  height: 116px;
+  text-align: center;
+  margin: 14px 0 0 0;
+}
+
+.compName {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  color: #000000;
+  text-shadow: 8px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.phrase {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3vh;
+  line-height: 14px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.langButton {
+  margin-left: 90%;
+  margin-top: 2vh;
+}

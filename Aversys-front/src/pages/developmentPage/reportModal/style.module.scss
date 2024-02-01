@@ -1,0 +1,67 @@
+.modalFooterBtn{
+  margin-left: 10px;
+  height: 100%;
+}
+
+.messageDate{
+  margin-top: 10px;
+  text-align: right;
+}
+
+.modalFooter{
+  display: flex;
+  align-items: center;
+}
+
+.messagesContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 60vh;
+  overflow: auto;
+}
+
+.lastMessageElement{
+  content: ''
+}
+
+.userMessage{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.adminMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.adminSign{
+  color: #FFA41B;
+}
+
+.userMessageInner{
+  color: white;
+  border-radius: 20px;
+  background-color: #DC8900;
+  padding: 10px;
+  max-width: 40%;
+  min-width: 20%;
+}
+
+.adminMessageInner {
+  color: white;
+  border-radius: 20px;
+  background-color: #333333;
+  padding: 10px;
+  max-width: 40%;
+  min-width: 20%;
+}
+
+.messageText{
+  font-size: 16px;
+}

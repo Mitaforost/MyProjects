@@ -1,0 +1,91 @@
+* {
+  font-family: "Sen", sans-serif;
+}
+.userInterfaceHeader {
+  text-align: center;
+  padding: 40px;
+}
+
+.photoBASE64{
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+.userInterfaceHeader h1 {
+  color: #000;
+  font-size: 41px;
+  margin: 0;
+  font-weight: 800;
+  text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+}
+.userInterfaceHeader span {
+  font-size: 32px;
+  font-weight: 800;
+  filter: drop-shadow(6px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.userInterfaceHeader p {
+  font-size: 20px;
+}
+.userDataBlock {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+
+  align-content: center;
+  flex-direction: row;
+  padding: 0 80px;
+  grid-template-columns: 1fr 1fr;
+}
+.userInfoBlock {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.userInfoBlock img {
+  margin: 0 0 45px;
+}
+.userInfoBlock p {
+  font-size: 24px;
+  border: 3px solid black;
+  margin: 0 0 30px 0;
+  border-radius: 18px;
+  width: 400px;
+  padding: 0 0 0 50px;
+}
+.mainBlockPersArea button {
+  background-color: #ffa41b;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  width: 147px;
+  height: 34px;
+  margin: 0 auto;
+  font-weight: 800;
+}
+.tableBlockStyle {
+  border: 3px solid black;
+  border-radius: 16px;
+  padding: 32px 11px;
+}
+.userInfoBlock span {
+  font-size: 16px;
+  font-weight: 800;
+}
+.userInfoBlock span:first-child {
+  color: #ffa41b;
+}
+.userTableData img {
+  display: flex;
+  margin: 8px auto;
+}
+.userTableData p {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}

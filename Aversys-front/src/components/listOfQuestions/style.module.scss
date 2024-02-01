@@ -1,0 +1,37 @@
+.questionBtn{
+    line-height: 10vh;
+    font-family: 'Sen';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: aliceblue;
+    text-align: start;
+    margin: 15px 0 15px 25px;
+}
+.questionBtn:hover{
+    opacity: 0.7;
+}
+ul{
+    list-style: none;
+}
+.scrollBlock{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 28vh;
+    width: 90%;
+    margin-top: 2vh;
+}
+.scrollBlock::-webkit-scrollbar {
+    width: 22px;
+  }
+  
+  .scrollBlock::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #000000;
+  }
+  
+  .scrollBlock::-webkit-scrollbar-thumb {
+    background-color: #a1a1a1;
+    
+  }

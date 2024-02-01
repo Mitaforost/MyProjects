@@ -1,0 +1,96 @@
+//////////////////////////////////////AUTORIZED STYLES
+.formStyles input::placeholder {
+  color: #a1a1a1;
+  font-size: 18px;
+  padding: 0 5px;
+}
+
+.formStyles input {
+  width: 400px;
+  height: 40px;
+  color: #000;
+}
+
+.passwordInput{
+  position: relative;
+}
+.inputEye{
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border-color: #428b79;
+  color: black;
+  right: 10px;
+  top: 9px;
+}
+.inputEye img{
+  width: 20px;
+  height: 20px;
+}
+.inputEye img:hover{
+  cursor: pointer;
+}
+
+.loginFormBlock button {
+  background-color: #ffa41b;
+  height: 45px;
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  width: 187px;
+  border: none;
+  border-radius: 18px;
+}
+
+.loginFormBlock button span {
+  text-align: center;
+  color: #000;
+  margin: 0 auto;
+  font-weight: 800;
+  font-size: 23px;
+}
+
+.loginFormBlock button:focus {
+  background-color: #ffa41b;
+}
+.loginFormBlock button:hover {
+  background-color: #65726e;
+}
+//////////////////////////////////////REGISTER STYLES
+* {
+  font-family: "Sen", sans-serif;
+}
+
+.registerFormBlock input {
+  height: 4vh;
+  color: #ffa41b;
+  padding: 0 10px;
+  font-size: 20px;
+  width: 331px;
+  background-color: #256152 !important;
+  border-radius: 15px;
+}
+.registerFormBlock input::placeholder {
+  color: #ffa41b;
+  font-size: 18px;
+}
+.registerFormBlock button {
+  border-radius: 15px;
+}
+.politicBlock {
+  display: flex;
+}
+.politicText {
+  width: 100%;
+  max-width: 371px;
+  color: #428b79;
+  font-size: 1.5vh;
+  letter-spacing: 1.5px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 0 16px 10px;
+}
+
+.politicText span {
+  color: #ffc368;
+}
